@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{98E3E2B9-2311-4B18-B846-6B5C2FBC850E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{A2E67C5F-123B-40DD-9F93-801C6DBB0912}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebService", "WebService\WebService.csproj", "{A2E67C5F-123B-40DD-9F93-801C6DBB0912}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
