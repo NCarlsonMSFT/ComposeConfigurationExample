@@ -6,5 +6,9 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
+@if (StringComparer.OrdinalIgnoreCase.Equals("engaged", Environment.GetEnvironmentVariable("extra_mode"))) {
+    <h2>Extra mode engaged!</h2>
+}
+
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

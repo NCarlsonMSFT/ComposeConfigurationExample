@@ -8,8 +8,16 @@
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
     <DockerServiceName>webservice</DockerServiceName>
+    <Configurations>Debug;Release;ExtraDebug</Configurations>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ExtraDebug|AnyCPU'">
+    <DockerDevelopmentMode>Fast</DockerDevelopmentMode>
+    <AdditionalComposeFilePaths>docker-compose.extra.yml</AdditionalComposeFilePaths>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="docker-compose.extra.yml" />
     <None Include="docker-compose.override.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>
